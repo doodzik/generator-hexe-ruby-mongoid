@@ -1,10 +1,10 @@
 {
-  "name": "generator_hexe_ruby_mongoid",
+  "name": "generator-hexe-ruby-mongoid",
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "generators/app/index.js",
-  "repository": "doodzik/generator_hexe_ruby_mongoid",
+  "repository": "doodzik/generator-hexe-ruby-mongoid",
   "author": {
     "name": "Frederik Dudzik",
     "email": "",

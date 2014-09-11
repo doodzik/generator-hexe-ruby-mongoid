@@ -10,7 +10,7 @@ describe('generator hexe ruby mongoid', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('hexe_ruby_mongoid:app', [
+      this.app = helpers.createGenerator('hexe-ruby-mongoid:app', [
         '../../adapter'
       ]);
       done();
