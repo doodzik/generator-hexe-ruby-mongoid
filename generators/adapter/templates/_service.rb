@@ -1,7 +1,7 @@
 require 'Mongoid'
 
 module Mongodb
-  class <%= Service %
+  class <%= Service %>
     include Mongoid::Document
 
     field :name

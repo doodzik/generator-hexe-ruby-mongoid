@@ -9,8 +9,7 @@ var spawn = require('child_process').spawn;
 
 var MongoidRubyHexeGenerator = yeoman.generators.Base.extend({
   init: function () {
-    this.pkg = require('../../package.json');
-
+/*
     this.on('end', function () {
       if (!this.options['skip-install']) {
         var bundle = spawn("bundle", ["install"]);
@@ -24,25 +23,7 @@ var MongoidRubyHexeGenerator = yeoman.generators.Base.extend({
         });
       }
     });
-  },
-
-  askFor: function() {
-    var done = this.async();
-
-    // have Yeoman greet the user
-    console.log(this.yeoman);
-
-    var prompts = [{
-        name: 'serviceName',
-        message: 'What is your service\'s name ?'
-    }];
-
-    this.prompt(prompts, function (props) {
-        this.service = props.serviceName;
-        this.Service = props.serviceName.charAt(0).toUpperCase() + props.serviceName.slice(1);
-
-        done();
-    }.bind(this));
+*/
   },
 
   structure: function () {
@@ -51,7 +32,7 @@ var MongoidRubyHexeGenerator = yeoman.generators.Base.extend({
   },
 
   createFiles: function () {
-    //TODO ask for each module
+    //TODO remove context
     var context = {
       service: this.service,
       Service: this.Service
