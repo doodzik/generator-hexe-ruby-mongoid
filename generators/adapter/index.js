@@ -23,13 +23,13 @@ var MongoidRubyGenerator = yeoman.generators.Base.extend({
     //adapter
     this.template(
       '_service.rb',
-      'adapters/mongoid/'+context.service+'.rb',
+      'adapters/mongoid_'+context.service+'.rb',
       context
     );
     //spec
     this.template(
       '_service_spec.rb',
-      'spec/adapters/mongoid/'+context.service+'_spec.rb',
+      'spec/adapters/mongoid_'+context.service+'_spec.rb',
       context
     );
   }

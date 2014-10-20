@@ -26,11 +26,6 @@ var MongoidRubyHexeGenerator = yeoman.generators.Base.extend({
 */
   },
 
-  structure: function () {
-    this.mkdir('adapters/mongoid');
-    this.mkdir('spec/adapters/mongoid');
-  },
-
   createFiles: function () {
     //TODO remove context
     var context = {
