@@ -45,6 +45,9 @@ var MongoidRubyHexeGenerator = yeoman.generators.Base.extend({
       '_spec/_tasks/_mongoid_spec.rb',
       'spec/tasks/mongoid_spec.rb', context);
     */
+    this.template(
+      '_spec/_support_mongoid.rb',
+      'spec/support_mongoid.rb', context);
     //tasks
     this.template('_tasks/_mongoid.rb', 'tasks/mongoid.rb', context);
 
