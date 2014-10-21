@@ -1,5 +1,9 @@
 namespace :mongoid do
   task :serve do
+    require "mongoid"
+
+    Rake::Task['before:mongoid'].invoke if Rake::Task.task_defined?('before:mongoid')
+    
     module Mongoid
       module Document
         def as_json(options={})
@@ -11,5 +15,7 @@ namespace :mongoid do
     end
 
     Mongoid.load!("#{ENV['BASEDIR']}/contracts/mongoid.yml")
+    
+    Rake::Task['after:mongoid'].invoke if Rake::Task.task_defined?('after:mongoid')
   end
 end
